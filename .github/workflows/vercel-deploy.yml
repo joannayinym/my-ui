@@ -32,15 +32,17 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
-      - name: Build project
-        run: npm run build
-
       - name: Build Storybook
         run: npm run build-storybook
+
+      - name: Build project
+        run: npm run build
 
       - name: Copy Storybook to dist folder
         run: |
           cp -r storybook-static dist/storybook-static
+          ls -la dist/
+          ls -la dist/storybook-static/
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest

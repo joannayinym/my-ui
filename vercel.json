@@ -9,13 +9,16 @@
       }
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
       "source": "/storybook",
-      "destination": "/storybook-static/index.html"
-    },
+      "destination": "/storybook-static/index.html",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
-      "source": "/storybook/(.*)",
+      "source": "/storybook-static/(.*)",
       "destination": "/storybook-static/$1"
     },
     {
