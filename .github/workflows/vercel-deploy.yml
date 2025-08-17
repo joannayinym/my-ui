@@ -35,6 +35,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Build Storybook
+        run: npm run build-storybook
+
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
@@ -72,7 +75,7 @@ jobs:
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     issue_number: context.issue.number,
-                    body: `🚀 **Preview Deployment Ready!**\n\nYour changes have been deployed to Vercel:\n${status.target_url}\n\nThis is a preview deployment for this PR.`
+                    body: `🚀 **Preview Deployment Ready!**\n\nYour changes have been deployed to Vercel:\n${status.target_url}\n\nThis is a preview deployment for this PR.\n\n📚 **Storybook**: ${status.target_url}/storybook`
                   });
                 }
               }

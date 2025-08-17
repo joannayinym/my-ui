@@ -66,6 +66,27 @@ function App() {
           <Button onClick={() => alert("Button clicked!")}>Click Me</Button>
         </div>
       </div>
+
+      <div
+        style={{
+          marginTop: "2rem",
+          padding: "1rem",
+          border: "1px solid #007bff",
+          borderRadius: "8px",
+          backgroundColor: "#f8f9ff",
+        }}
+      >
+        <h2>📚 Component Library</h2>
+        <p>
+          View all components and their variations in our interactive Storybook:
+        </p>
+        <Button
+          variant="outline"
+          onClick={() => window.open("/storybook", "_blank")}
+        >
+          Open Storybook
+        </Button>
+      </div>
     </>
   );
 }
