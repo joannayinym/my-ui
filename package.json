@@ -12,7 +12,8 @@
     "build-storybook": "storybook build",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run --environment=node",
+    "test:ci": "vitest run --environment=node --reporter=verbose"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.34",

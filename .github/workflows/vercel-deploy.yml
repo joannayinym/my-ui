@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm run test:run
+        run: npx vitest run --reporter=verbose --environment=node
 
       - name: Build project
         run: npm run build
