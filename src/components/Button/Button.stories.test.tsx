@@ -36,7 +36,7 @@ describe("Button Stories", () => {
   it("Default story has correct args", () => {
     const defaultStory = ButtonStories.Default;
     expect(defaultStory.args).toBeDefined();
-    expect(defaultStory.args?.children).toBe("Click me");
+    expect(defaultStory.args?.children).toBe("Click Me!");
   });
 
   it("Primary story has correct variant", () => {

@@ -60,7 +60,7 @@ type Story = StoryObj<typeof meta>;
 // Default button
 export const Default: Story = {
   args: {
-    children: "Click me",
+    children: "Click Me!",
   },
 };
 
