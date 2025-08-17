@@ -7,10 +7,6 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "storybook-static/**",
-      "use": "@vercel/static"
     }
   ],
   "rewrites": [
