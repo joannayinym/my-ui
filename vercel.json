@@ -7,18 +7,19 @@
       "config": {
         "distDir": "dist"
       }
-    }
-  ],
-  "redirects": [
+    },
     {
-      "source": "/storybook",
-      "destination": "/storybook-static/index.html",
-      "permanent": false
+      "src": "storybook-static/**",
+      "use": "@vercel/static"
     }
   ],
   "rewrites": [
     {
-      "source": "/storybook-static/(.*)",
+      "source": "/storybook",
+      "destination": "/storybook-static/index.html"
+    },
+    {
+      "source": "/storybook/(.*)",
       "destination": "/storybook-static/$1"
     },
     {
